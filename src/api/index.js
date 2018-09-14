@@ -1,5 +1,8 @@
-import hello from './hello'
+import {generate} from '../utils/apiGenerator';
+import hello from './hello';
 
-export default {
+let api = {
   hello
-}
+};
+
+export default generate(api);

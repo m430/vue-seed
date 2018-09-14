@@ -13,7 +13,7 @@
     </Sider>
     <Layout>
       <Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-        <Card style="width:320px" v-for="hello in hellos">
+        <Card style="width:320px" v-for="hello in hellos" :key="hello.id">
             <div style="text-align:center">
                 <img :src="hello.icon">
                 <h3>{{hello.id}}</h3>

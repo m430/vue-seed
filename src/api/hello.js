@@ -1,13 +1,5 @@
-import axios from '../utils/http';
-
-const hello = {
-  getHello() {
-    return axios({
-      url: '/hello',
-      method: 'GET',
-      data: {}
-    })
-  }
-};
+const hello = [
+  {name: 'hello', url: '/hello', method: 'GET'}
+];
 
 export default hello;
